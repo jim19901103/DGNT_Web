@@ -1,0 +1,429 @@
+html, body {
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    background: black;
+
+}
+
+div {
+    display: block;
+}
+
+/*選取文字時的顏色*/
+::selection {
+    color: red; 
+    background: yellow;
+}
+
+
+
+#Wrapper { 
+    height: auto !important;
+    height: 100%; 
+    min-height:100%;
+    position: relative;
+
+    width: 1024px;
+    max-width: 1024px;
+    margin:0px auto;
+
+}
+
+/*頁首開始*/
+.HeaderBlock{
+    display: -webkit-flex;
+    display: flex;
+
+    border: solid 2px black;
+    box-sizing: border-box;    
+    float:top;  
+
+    width: 1024px; 
+    max-width: 1024px; 
+    height:100px;
+    margin: 0 auto;
+}
+
+/*Logo*/
+.LogoBlock {
+    -webkit-flex: initial;
+    flex: initial;  
+    height: inherit;
+    margin: 0 auto;
+
+    width: 200px;
+    border: solid 2px green;
+
+
+    /*置中*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+
+}
+/*按比例縮小圖片大小*/
+#LogoPicture {
+    height: 80px;
+    /*(IE6)若圖片大於550px就調整*/
+    width:expression(document.body.clientWidth&gt;550?"550px""auto");
+    overflow:hidden;      /*超過不顯示*/
+}
+
+
+
+/*選單列*/
+.NavBlock {
+    -webkit-flex: 1;
+    flex: 1;
+
+    width: 200px;
+
+    height: 60px;
+
+    border: solid 2px blue;
+
+    clear: both;
+    margin: 0;
+    padding-top: 40px; 
+   
+    
+}
+
+.NavBlock ul li {
+    list-style: none;
+    float: left;
+    padding: 0 5px 0 0;
+
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 0 auto;
+
+    /*條槓*/
+    background: url(Linearbars2.png) right center no-repeat;
+    padding: 0 1px 0 0;
+}
+
+.NavBlockMenu {
+    list-style: none;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.NavBlock a {
+    float: left;
+    display: block;
+    color: #252525;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 23px 38px 21px;
+    border: 0;
+    outline: 0;
+    line-height: 1;
+    list-style-type: none;
+    text-transform: uppercase;
+
+    /*border-left: 1px solid red;*/
+
+}
+
+/*移動至連結時顏色變化*/
+.NavBlock a:hover{
+    color:#5AA0E6;
+    transition:  color .20s linear;
+    -o-transition: color .20s linear;
+    -webkit-transition: color .20s linear;
+    -moz-transition: color .20s linear;
+}
+
+
+
+/*
+#HomeLink {
+    color: #fefefe;
+    background: #252525;
+    border: 0;
+
+    font-weight: 500;
+    padding: 23px 38px 21px;
+    outline: 0;
+    line-height: 1;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+*/
+
+
+/*頁首結束*/
+
+
+
+/*Main Block*/
+.MiddleTopBlock {
+    display: -webkit-flex;
+    display: flex;
+
+    height: 460px;
+    border:solid 2px white;
+    /*width: 960px;*/
+
+    /*預留footer block的空間   
+    padding-bottom: 100px;
+    margin: 0 auto;*/
+}
+
+
+
+/*左邊區塊*/
+.Left_NavBlock { 
+    -webkit-flex: initial;
+    flex: initial;    
+
+    border: solid 2px red;      
+
+    min-width: 512px;
+    width: 512px;    
+    
+    height: inherit;
+
+
+    /*置中*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+}
+
+/*按比例縮小圖片大小*/
+#InstructionPicture {
+    height: 400px;
+    /*(IE6)若圖片大於550px就調整*/
+    width:expression(document.body.clientWidth&gt;550?"550px""auto");
+    overflow:hidden;      /*超過不顯示*/
+}
+
+/*
+.Middle_ContentBlock {
+    -webkit-flex: none;
+    flex: none;
+
+    width: 640px;
+
+    height: inherit;
+
+    border: solid 2px blue;
+}
+*/
+
+/*右邊區塊*/
+.Right_ProfileBlock {
+    -webkit-flex: 1;
+    flex: 1;    
+
+    height: inherit;
+
+    border: solid 2px yellow;
+   
+
+    /*區塊置中*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+
+}
+
+/*簡介敘述*/
+.BriefIntroduction {
+    width: 320px;
+    height: 200px;
+
+    color: #252525;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 23px 38px 21px;
+    
+
+    /*line-height: 1;    
+    text-transform: uppercase;*/
+
+    list-style-type: none;
+    border: solid 2px purple;
+    /*超出範圍時*/
+    overflow: hidden;
+}
+
+.MiddleCenterBlock {
+
+    height: 400px;
+    border:solid 2px orange;
+
+    /*    
+    overflow: auto;
+    預留footer block的空間 
+    padding-bottom: 50px;
+
+    
+    margin-bottom: 100px;*/
+    margin-top: 50px;
+
+
+}
+
+
+.MiddleCenterBlock2 {
+    height: 300px;
+    border:solid 2px #5151A2;
+
+    margin-top: 50px;
+
+}
+
+
+/*中間中層區塊2內容*/
+/*左表格*/
+.RecruitOrOtherTable {
+    width: 49%;
+    height: 100%;
+    background-color: gray;
+    border:solid 2px red;
+    padding: 0;
+    /*表格佈局固定*/
+    table-layout:fixed;
+    float: left;
+
+    
+}
+/*右表格*/
+.RecruitOrOtherTable2 {
+    width: 49%;
+    height: 100%;
+    background-color: gray;
+    border:solid 2px red;
+    padding: 0;
+    /*表格佈局固定*/
+    table-layout:fixed;  
+    float: right;  
+}
+
+/*標題內容*/
+.TheadContent {
+    color: #252525;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-bottom: solid 1px white;
+}
+
+/*表格中圖片*/
+.TableContentPicture {
+    height: 200px;
+    /*(IE6)若圖片大於200px就調整*/
+    width:expression(document.body.clientWidth&gt;200px?"200px""auto");
+    overflow:hidden;  
+      
+}
+
+/*按鈕的表格區塊*/
+.TableButton {
+    border-top: solid 1px white;
+}
+
+
+
+
+
+
+
+
+
+.MiddleBottomBlock {
+    height: 200px;
+    border:solid 2px #336666;
+
+        
+    /*預留footer block的空間*/ 
+    padding-bottom: 50px;
+    
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+/*頁尾*/
+.FooterBlock {
+
+    height: 60px;
+    border: solid 2px white;
+
+    position: relative;
+    margin-top: -50px; 
+    
+    clear: both;
+
+
+    /*footer 高度
+    height: 50px;
+    box-sizing: border-box;
+    footer 絕對位置 底部
+    position: absolute;
+    bottom: 0;
+
+    
+    width: 100%;    
+    border: solid 2px white;*/
+
+    /*footer 高度*/
+}
+
+.FooterBlock img {
+    float: left;
+    height: 60px;
+    /*(IE6)若圖片大於60px就調整*/
+    width:expression(document.body.clientWidth&gt;60px?"60px""auto");
+    overflow:hidden; 
+}
+
+#ContactUs {
+    height: inherit;
+    float: left;
+    margin-left: 10px;
+}
+
+#ContactUs p {
+    color: red;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    text-align: left;
+    border:solid 2px blue;
+
+    margin: 10px 0px 0px 0px;
+}
+
+#C1 {
+    color: yellow;
+}
