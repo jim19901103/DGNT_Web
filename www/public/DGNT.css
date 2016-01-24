@@ -4,6 +4,10 @@ html, body {
     padding: 0;
     background: black;
 
+    width: 1024px;
+    max-width: 1024px;
+    margin:0px auto;
+
 }
 
 div {
@@ -23,10 +27,6 @@ div {
     height: 100%; 
     min-height:100%;
     position: relative;
-
-    width: 1024px;
-    max-width: 1024px;
-    margin:0px auto;
 
 }
 
@@ -68,10 +68,15 @@ div {
 }
 /*按比例縮小圖片大小*/
 #LogoPicture {
+    width:auto;
+    max-width:100%;
+
     height: 80px;
     /*(IE6)若圖片大於550px就調整*/
     width:expression(document.body.clientWidth&gt;550?"550px""auto");
     overflow:hidden;      /*超過不顯示*/
+
+
 }
 
 
@@ -95,6 +100,8 @@ div {
 }
 
 .NavBlock ul li {
+    position: relative;
+
     list-style: none;
     float: left;
     padding: 0 5px 0 0;
@@ -142,6 +149,10 @@ div {
     -o-transition: color .20s linear;
     -webkit-transition: color .20s linear;
     -moz-transition: color .20s linear;
+}
+
+.NavBlock div {
+    clear: both;
 }
 
 
@@ -207,10 +218,14 @@ div {
 
 /*按比例縮小圖片大小*/
 #InstructionPicture {
+    width:auto;
+    max-width:100%;
+
     height: 400px;
     /*(IE6)若圖片大於550px就調整*/
     width:expression(document.body.clientWidth&gt;550?"550px""auto");
-    overflow:hidden;      /*超過不顯示*/
+    overflow:hidden;    /*超過不顯示*/
+
 }
 
 /*
@@ -253,10 +268,13 @@ div {
     height: 200px;
 
     color: #252525;
-    font-size: 14px;
+    font-size: 3;
     text-decoration: none;
+    text-align:left;
     font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
     font-weight: bold;
+
+
     padding: 23px 38px 21px;
     
 
@@ -307,7 +325,6 @@ div {
     /*表格佈局固定*/
     table-layout:fixed;
     float: left;
-
     
 }
 /*右表格*/
@@ -335,10 +352,14 @@ div {
 /*表格中圖片*/
 .TableContentPicture {
     height: 200px;
+
+    width:auto;
+    max-width:100%;
     /*(IE6)若圖片大於200px就調整*/
     width:expression(document.body.clientWidth&gt;200px?"200px""auto");
-    overflow:hidden;  
-      
+    overflow:hidden;     
+
+
 }
 
 /*按鈕的表格區塊*/
@@ -355,8 +376,10 @@ div {
 
 
 .MiddleBottomBlock {
-    height: 200px;
+    position: relative;
+    height: 150px;
     border:solid 2px #336666;
+    overflow: hidden;
 
         
     /*預留footer block的空間*/ 
@@ -366,6 +389,49 @@ div {
     margin-top: 50px;
 }
 
+.HistoryRecordTitleBlock {
+    float: left;
+    width: 120px;
+    height: 200px;
+    padding: 0 20px 0 15px;
+    position: relative;
+
+    border: solid 2px blue;
+
+    
+}
+
+#RecordOfHistory {
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#ParagraphDescription {
+    line-height: 16px;
+    font-size: 14px;
+    color: #ffffff;
+
+    border: solid 2px red;
+}
+
+#FollowLink {
+    position: absolute;
+    bottom: 0;
+
+    color: #e3be5a;
+    text-decoration: none;
+}
+
+#F1 {
+    color: #e3be5a; 
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+   
+}
 
 
 
@@ -426,4 +492,51 @@ div {
 
 #C1 {
     color: yellow;
+}
+
+.SocialList {
+    margin: 10px 0 0 0 ;
+    float: left;
+    list-style: none;
+
+    border: solid 2px yellow;
+}
+
+#FacebookLink {
+    background-image: url('fbicon.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    margin-left: -20px;
+
+    border: solid 2px green;
+}
+
+#TwitterLink {
+    background-image: url('twittericon.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: block;
+    width: 35px;
+    height: 35px;
+    
+    margin-left: -20px;
+    border: solid 2px green;
+
+
+}
+
+#InstagramLink {
+    background-image: url('instagramicon.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    margin-left: -20px;
+    border: solid 2px green;
 }
