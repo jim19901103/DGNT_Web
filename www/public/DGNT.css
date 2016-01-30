@@ -116,6 +116,7 @@ div {
 }
 
 .NavBlockMenu {
+    position: relative;
     list-style: none;
     float: left;
     margin: 0 auto;
@@ -286,6 +287,23 @@ div {
     /*超出範圍時*/
     overflow: hidden;
 }
+
+
+#BlogUlUse {
+    color: #ffffff;
+    font-size: 3;
+    text-decoration: none;
+    text-align:left;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+
+    padding: 23px 38px 21px;
+}
+
+
+
+
 
 .MiddleCenterBlock {
 
