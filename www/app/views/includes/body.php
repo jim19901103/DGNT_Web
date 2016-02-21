@@ -4,7 +4,7 @@ $body1 = <<<EOF
 	<!--中間上層區塊開始-->
 		<div class="MiddleTopBlock">
 			<div class="Left_NavBlock">
-				<img id="InstructionPicture" src="Instruction.jpg" 
+				<img id="InstructionPicture" src="Instruction.jpg"
 				ate="DGNT_Instruction" />
 			</div>
 
@@ -24,7 +24,11 @@ return $body1;
 function getBodyCenter(){
 $body2 = <<<EOF
 		<!--中間中層區塊1開始(可用於跑馬燈(各實況主的LINK))-->
-		<div class="MiddleCenterBlock">
+		<div id="MiddleCenterBlock">
+			<div class="MiddleCenterBlockFig1"><a href="https://livehouse.in/channel/388060" target="_blank"><img src="1.png"/></a></div>
+			<div class="MiddleCenterBlockFig2"><a href="https://livehouse.in/channel/388060" target="_blank"><img src="2.png"/></a></div>
+			<div class="MiddleCenterBlockFig3"><a href="https://livehouse.in/channel/388060" target="_blank"><img src="3.png"/></a></div>
+			<div class="MiddleCenterBlockFig4"><a href="https://livehouse.in/channel/388060" target="_blank"><img src="4.png"/></a></div>
 		</div>
 		<!--中間中層區塊1結束-->
 
