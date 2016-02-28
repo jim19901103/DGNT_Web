@@ -3,10 +3,9 @@
 
 // initialization
 try {
-	if (! @include_once(dirname(__FILE__) . '/app/init.php')) { // @ - to suppress warnings.
+	if (! @include_once(dirname(__FILE__) . '/../app/init.php')) { // @ - to suppress warnings.
 		throw new Exception("Initialization Error", 1001);		
 	}
-	
 	$app = new App();
 }
 catch(Exception $e) {    

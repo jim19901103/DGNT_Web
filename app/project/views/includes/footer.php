@@ -1,6 +1,3 @@
-<?php
-function getFooter(){
-$footer = <<<EOF
 <div class="FooterBlock">
 	<div id="FooterInner">
 		<img src="78.png" alt="78Logo">
@@ -21,8 +18,3 @@ $footer = <<<EOF
 		</ul>
 	</div>
 	</div>
-
-EOF;
-return $footer;
-}
-?>

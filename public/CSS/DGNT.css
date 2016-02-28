@@ -322,7 +322,7 @@ div {
     z-index: 0;
     display: block;
 }
-.MiddleCenterBlockFig1 {
+.MiddleCenterBlockFig {
     /*background:url("1.png") no-repeat scroll 0 0 transparent;*/
     padding: 0;
     height: 400px;
@@ -330,31 +330,6 @@ div {
     top: 0;
     left: 0;
 }
-.MiddleCenterBlockFig2 {
-    /*background:url("2.png") no-repeat scroll 0 0 transparent;*/
-    padding: 0;
-    height: 400px;
-    width: 600px;
-    top: 0;
-    left: 0;
-}
-.MiddleCenterBlockFig3 {
-    /*background:url("3.png") no-repeat scroll 0 0 transparent;*/
-    padding: 0;
-    height: 400px;
-    width: 600px;
-    top: 0;
-    left: 0;
-}
-.MiddleCenterBlockFig4 {
-    /*background:url("4.png") no-repeat scroll 0 0 transparent;*/
-    padding: 0;
-    height: 400px;
-    width: 600px;
-    top: 0;
-    left: 0;
-}
-
 
 
 
