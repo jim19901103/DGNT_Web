@@ -1,11 +1,12 @@
 <!--中間上層區塊開始-->
 <div class="MiddleTopBlock">
 	<div class="Left_NavBlock">
-		<img id="InstructionPicture" src="Instruction.jpg" ate="DGNT_Instruction" />
+		<img id="InstructionPicture" src="../../public/Images/Instruction.jpg" ate="DGNT_Instruction" />
 	</div>
 
 	<div class="Right_ProfileBlock">
 		<div class="BriefIntroduction">
+			<!--介紹-->
 			<font><?=$data['contents'];?></font>
 		</div>
 	</div>
@@ -28,18 +29,18 @@
 			<tr>
 				<th class="TheadContent">Our Story</th>
 				<th class="TheadContent"></th>
-			</tr>	
+			</tr>
 		</thead>
 
 		<tobdy>
-			<tr>					
-				<td><img class="TableContentPicture" 
-					src="dgnt2.jpg" alt="dgnt" /></td>
-				
+			<tr>
+				<td><img class="TableContentPicture"
+					src="../../public/Images/dgnt2.jpg" alt="dgnt" /></td>
+
 				<td>DGNT Workshop持續招募喜愛實況、喜歡繪圖、想學習團隊事務的朋友，一起加入我們的行列，與我們共事並一起慢慢成長！有興趣的朋友請點以下按鈕進入了解詳情吧！</td>
 			</tr>
 
-			<tr>					
+			<tr>
 				<td class="TableButton"><button type="button">了解詳情</button></td>
 				<td class="TableButton"></td>
 			</tr>
@@ -51,17 +52,18 @@
 			<tr>
 				<th class="TheadContent">The Other</th>
 				<th class="TheadContent"></th>
-			</tr>	
+			</tr>
 		</thead>
 
 		<tobdy>
-			<tr>					
-				<td><img class="TableContentPicture" 
-					src="dgnt2.jpg" alt="dgnt" /></td>
+			<tr>
+				<td><img class="TableContentPicture"
+					src="../../public/Images/dgnt2.jpg" alt="dgnt" /></td>
+
 				<td>DGNT Workshop持續招募喜愛實況、喜歡繪圖、想學習團隊事務的朋友，一起加入我們的行列，與我們共事並一起慢慢成長！有興趣的朋友請點以下按鈕進入了解詳情吧！</td>
 			</tr>
 
-			<tr>					
+			<tr>
 				<td class="TableButton"><button type="button">Other</button></td>
 				<td class="TableButton"></td>
 			</tr>
@@ -69,7 +71,6 @@
 	</table>
 </div>
 <!--中間中層區塊2結束-->
-
 
 <!--中間下層區塊開始(可用於事件歷程近況等)-->
 <div class="MiddleBottomBlock">
@@ -82,8 +83,6 @@
 	<div>
 		<iframe>
 		</iframe>
-
 	</div>
-
 </div>
 <!--中間下層區塊結束-->

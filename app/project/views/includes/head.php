@@ -12,4 +12,3 @@ $('#MiddleCenterBlock').cycle({
      });
 	}); </script>
 <title>Dragnorth's Page</title>
-

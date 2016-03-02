@@ -10,7 +10,7 @@
  * @author PoYu Lai
  * @package MVC
  */
-class Model 
+class Model
 {
 	protected $db;
 

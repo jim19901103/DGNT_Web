@@ -3,14 +3,10 @@
 
 class Home_model extends Model
 {
-	
 	function __construct()
 	{
 		//parent::__construct('localhost', 'web', 'root', '');
 	}
-
-
-
 
 	function getBodyTop()
 	{
@@ -19,18 +15,3 @@ class Home_model extends Model
 	}
 }
 ?>
-
-
-<!--中間上層區塊開始
-<div class="MiddleTopBlock">
-	<div class="Left_NavBlock">
-		<img id="InstructionPicture" src="Instruction.jpg" ate="DGNT_Instruction" />
-	</div>
-
-	<div class="Right_ProfileBlock">
-		<div class="BriefIntroduction">
-			<font></font>
-		</div>
-	</div>
-</div>
-中間上層區塊結束-->

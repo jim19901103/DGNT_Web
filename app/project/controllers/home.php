@@ -2,7 +2,7 @@
 // echo 'controllers\home<br>';
 
 /**
-* 
+*
 */
 class Home extends Controller
 {
@@ -10,10 +10,6 @@ class Home extends Controller
 	{
 		$model = $this->model('home_model');
 		$contents = $model->getBodyTop();
-		//$js = parent::getBodyCenter();
 		$this->view('layouts/default', array('page' => 'home', 'contents' => $contents));
 	}
-
-
-
 }

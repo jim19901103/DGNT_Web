@@ -10,7 +10,6 @@ class Other extends Controller
 	{
 		$model = $this->model('other_model');
 		$contents = $model->getOtherCont();
-		//$js = parent::getBodyCenter();
 		$this->view('layouts/default', array('page' => 'other', 'contents' => $contents));
 	}
 

@@ -19,9 +19,9 @@
 		</li>
 	</ul>
 </div>
-<!--中間上層區塊結束-->
-<div id="MiddleCenterBlock">
 
+<!--預留區塊-->
+<div id="MiddleCenterBlock">
 </div>
 <div class="MiddleCenterBlock2">
 </div>

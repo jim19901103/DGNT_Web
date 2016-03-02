@@ -13,29 +13,13 @@
 	<div id="main" class="row">
 
 		<?php
-			switch ($data['page']) {
-				case 'home':
-					require_once("/../page/home.blade.php");
-					break;
-				case 'blog':
-					require_once("/../page/blog.blade.php");
-					break;
-				case 'member':
-					require_once("/../page/member.blade.php");
-					break;
-				case 'other':
-					require_once("/../page/other.blade.php");
-					break;
-				default:
-					//
-					break;
-			}
+			require_once("/../page/member.blade.php");
 		?>
 
 	</div>
 	<footer class="row">
 		<?php
-			require_once("/../includes/footer.php");
+			//require_once("/../includes/footer.php");
 		?>
 		<div class="print_var">
 		<?php

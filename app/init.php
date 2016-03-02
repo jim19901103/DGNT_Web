@@ -13,17 +13,17 @@ if ($_SERVER['APP_ENVIRONMENT'] == 'dev') {
 
 // need include if namespace is not used
 try {
-	if (! @include_once(dirname(__FILE__) . '/core/App.php')) { 
-		throw new Exception("Initialization Error", 1002);		
+	if (! @include_once(dirname(__FILE__) . '/core/App.php')) {
+		throw new Exception("Initialization Error", 1002);
 	}
-	if (! @include_once(dirname(__FILE__) . '/core/Controller.php')) { 
-		throw new Exception("Initialization Error", 1003);		
+	if (! @include_once(dirname(__FILE__) . '/core/Controller.php')) {
+		throw new Exception("Initialization Error", 1003);
 	}
-	if (! @include_once(dirname(__FILE__) . '/core/Model.php')) { 
-		throw new Exception("Initialization Error", 1004);		
+	if (! @include_once(dirname(__FILE__) . '/core/Model.php')) {
+		throw new Exception("Initialization Error", 1004);
 	}
 }
-catch(Exception $e) {    
+catch(Exception $e) {
   echo "Message : " . $e->getMessage();
   echo "Code : " . $e->getCode();
 }
