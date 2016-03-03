@@ -1,6 +1,6 @@
 <div class="HeaderBlock">
 <div class="LogoBlock">
-	<a href="/Home">
+	<a href="/index.php">
 	<img id="LogoPicture" src="../public/Images/Logo.jpg" ate="Dragnorth78" />
 	</a>
 </div>

@@ -11,7 +11,6 @@
 	</header>
 
 	<div id="main" class="row">
-
 		<?php
 			switch ($data['page']) {
 				case 'home':
@@ -29,10 +28,17 @@
 				default:
 					//
 					break;
-			}
-		?>
-
+			}?>
 	</div>
+
+	<!-- FB Link To Web's Right -->
+	<div class="FbBox">
+	<div>
+		<div id="fb-root"></div>
+		<div class="fb-page" data-href="https://www.facebook.com/Dragnorth-Workshop-1024409334293029/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+	</div>
+	</div>
+
 	<footer class="row">
 		<?php
 			require_once("/../includes/footer.php");
