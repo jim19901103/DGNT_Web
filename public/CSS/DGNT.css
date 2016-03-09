@@ -173,7 +173,7 @@ div {
 /*簡介敘述*/
 .BriefIntroduction {
     width: 320px;
-    height: 250px;
+    height: 280px;
 
     color: #4876FF;
     font-size: 3;
@@ -263,11 +263,40 @@ div {
     width: 339px;
     border: solid 2px white;
 }
+
+#TeamStatusTitle {
+    color: #B452CD;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
 #RelatedInformationBlock2 {
     -webkit-flex: 1;
     flex: 1;
     border: solid 2px white;
 }
+
+#TeamRecruitingTitle {
+    color: #B452CD;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+#TeamRecruitingContent {
+    color: #B452CD;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", Exo, Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 5px 5px 5px 5px;
+}
+
 #RelatedInformationBlock3 {
     -webkit-flex: 1;
     flex: 1;
@@ -387,7 +416,6 @@ div {
 
 .FbBox span{
     right: 6px;
-    bottom: 4px;
     position: absolute;
     z-index: 99999;
 
