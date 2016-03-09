@@ -1,14 +1,14 @@
 <!--中間上層區塊開始-->
 <div class="MiddleTopBlock">
 	<div class="Left_NavBlock">
-		<img id="InstructionPicture" src="../../public/Images/Instruction.jpg" ate="DGNT_Instruction" />
-	</div>
-
-	<div class="Right_ProfileBlock">
 		<div class="BriefIntroduction">
-			<!--介紹-->
-			<font><?=$data['contents'];?></font>
+		<!--介紹-->
+		<font><?=$data['contents'];?></font>
 		</div>
+	</div>
+	<!--src後面+video:只嵌入影片；src後面+chatroom:只嵌入聊天頻道-->
+	<div class="Right_ProfileBlock">
+		<div><iframe id="Instructionframe" src="https://livehouse.in/embed/channel/388060/video" frameborder="0" allowfullscreen></iframe></div>
 	</div>
 </div>
 <!--中間上層區塊結束-->
@@ -22,7 +22,7 @@
 </div>
 <!--中間中層區塊1結束-->
 
-<!--中間中層區塊2開始(可用於招募相關、其他(左右各一共兩格))-->
+<!-- 中間中層區塊2開始(可用於招募相關、其他(左中右各一共三格))
 <div class="MiddleCenterBlock2">
 	<table class="RecruitOrOtherTable" rules="none">
 		<thead>
@@ -69,20 +69,56 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
-<!--中間中層區塊2結束-->
 
-<!--中間下層區塊開始(可用於事件歷程近況等)-->
-<div class="MiddleBottomBlock">
-	<div class="HistoryRecordTitleBlock">
-		<h3 id="RecordOfHistory">History<br />Record</h3>
-		<p id="ParagraphDescription">Join our on Twitter and Livehourse.</p>
-		<a href="https://livehouse.in/channel/388060" target="_blank" id="FollowLink">Follow Us<span id="F1"> >><span></a>
-	</div>
+	<table class="RecruitOrOtherTable3" rules="none">
+		<thead>
+			<tr>
+				<th class="TheadContent">The Other</th>
+				<th class="TheadContent"></th>
+			</tr>
+		</thead>
 
-	<div>
-		<iframe>
-		</iframe>
-	</div>
+		<tobdy>
+			<tr>
+				<td><img class="TableContentPicture"
+					src="../../public/Images/dgnt2.jpg" alt="dgnt" /></td>
+
+				<td>DGNT Workshop持續招募喜愛實況、喜歡繪圖、想學習團隊事務的朋友，一起加入我們的行列，與我們共事並一起慢慢成長！有興趣的朋友請點以下按鈕進入了解詳情吧！</td>
+			</tr>
+
+			<tr>
+				<td class="TableButton"><button type="button">Other</button></td>
+				<td class="TableButton"></td>
+			</tr>
+		</tbody>
+	</table>
 </div>
-<!--中間下層區塊結束-->
+中間中層區塊2結束
+ -->
+
+ <div class="MiddleCenterBlock2">
+ 	<div id="RelatedInformationBlock1"></div>
+ 	<div id="RelatedInformationBlock2"></div>
+ 	<div id="RelatedInformationBlock3">
+ 		
+
+		<div id="ContactUs">
+			<p>Contact Us <span id="C1">>><span></p>
+		</div>
+
+		<div class="ContactUsLinkBlock">
+			<ul class="SocialList">
+		        <li><a id="FacebookLink" href="http://www.facebook.com/" target="_blank"></a></li>
+		    </ul>
+		    <ul class="SocialList">
+				<li><a id="TwitterLink" href="https://twitter.com/" target="_blank"></a></li>
+			</ul>
+			<ul class="SocialList">
+				<li><a id="InstagramLink" href="http://instagram.com/" target="_blank"></a></li>
+			</ul>
+		</div>
+
+ 		
+ 	</div>
+ </div>
+

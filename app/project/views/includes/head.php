@@ -20,7 +20,7 @@ $('#MiddleCenterBlock').cycle({
 jQuery(document).ready(function() {
 jQuery(".FbBox").hover(function() {
 jQuery(this).stop().animate({right: "0"}, "medium");}, function() {
-jQuery(this).stop().animate({right: "-325"}, "medium");}, 500);});
+jQuery(this).stop().animate({right: "-333"}, "medium");}, 500);});
 </script>
 
 <!-- FB的外掛連結 -->
