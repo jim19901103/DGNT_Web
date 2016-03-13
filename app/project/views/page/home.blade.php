@@ -14,11 +14,23 @@
 <!--中間上層區塊結束-->
 
 <!--中間中層區塊1開始(可用於跑馬燈(各實況主的LINK))-->
-<div id="MiddleCenterBlock">
-	<div class="MiddleCenterBlockFig"><a href=<?=$data['MarqueeLinkContent1'];?> target="_blank"><img src=<?=$data['MarqueePigContent1'];?> /></a></div>
-	<div class="MiddleCenterBlockFig"><a href=<?=$data['MarqueeLinkContent2'];?> target="_blank"><img src=<?=$data['MarqueePigContent2'];?> /></a></div>
-	<div class="MiddleCenterBlockFig"><a href=<?=$data['MarqueeLinkContent3'];?> target="_blank"><img src=<?=$data['MarqueePigContent3'];?> /></a></div>
-	<div class="MiddleCenterBlockFig"><a href=<?=$data['MarqueeLinkContent4'];?> target="_blank"><img src=<?=$data['MarqueePigContent4'];?> /></a></div>
+<div class="MiddleCenterBlock">
+	<!-- 前一頁/下一頁 -->
+	<span class="pre"><img src=<?=$data['MarqueePreButton'];?> /></span>
+	<span class="next"><img src=<?=$data['MarqueeNextButton'];?> /></span>
+
+	<a href=<?=$data['MarqueeLinkContent1'];?> class="first" target="_blank"><img src=<?=$data['MarqueePigContent1'];?> /></a>
+	<a href=<?=$data['MarqueeLinkContent2'];?> target="_blank"><img src=<?=$data['MarqueePigContent2'];?> /></a>
+	<a href=<?=$data['MarqueeLinkContent3'];?> target="_blank"><img src=<?=$data['MarqueePigContent3'];?> /></a>
+	<a href=<?=$data['MarqueeLinkContent4'];?> target="_blank"><img src=<?=$data['MarqueePigContent4'];?> /></a>
+
+	<!-- 圓圈選擇區 -->
+	<div class="choose">
+	<span class="red"></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	</div>
 </div>
 <!--中間中層區塊1結束-->
 
