@@ -4,13 +4,9 @@ DGNT Web Design.
 
 ## Recent Update ##
 
-- 20160313
-  Modify the Marquee design.
+- 20160313  Modify the Marquee design.  
 
-
-- 20160309
-  
-Modify the homepage layout and code optimization.
+- 20160309  Modify the homepage layout and code optimization.
 
 
 - 20160303
