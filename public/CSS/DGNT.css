@@ -384,7 +384,7 @@ div {
 }
 
 #ContactUs {
-    height: inherit;
+    height: 40px;
     float: left;
     margin-left: 10px;
 }
@@ -398,47 +398,30 @@ div {
     margin: 10px 0px 0px 0px;
 }
 
-#C1 {
-    color: yellow;
+.ContactUsLinkBlock {
+    width: 100%;
+    height: 130px;
+    margin-top: 40px;
+    border: solid 2px green;
 }
 
-.SocialList {
-    margin: 10px 0 0 0 ;
-    float: left;
-    list-style: none;
+#DouNatUs {
+    height: 40px;
+    margin-left: 10px;
+}
+#DouNatUs p {
+    margin-top: 0px;
+    color: red;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    text-align: left;
 }
 
-#FacebookLink {
-    background-image: url('../../public/Images/fbicon.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
-    display: block;
-    width: 35px;
-    height: 35px;
-    margin-left: -20px;
-}
-
-#TwitterLink {
-    background-image: url('../../public/Images/twittericon.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
-    display: block;
-    width: 35px;
-    height: 35px;
-    margin-left: -20px;
-}
-
-#InstagramLink {
-    background-image: url('../../public/Images/instagramicon.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
-    display: block;
-    width: 35px;
-    height: 35px;
-    margin-left: -20px;
+.DouNatUsLinkBlock {
+    width: 100%;
+    height: 130px;
+    border: solid 2px green;
 }
 
 /*頁尾*/
@@ -512,3 +495,52 @@ div {
     text-decoration:underline;
 }
 
+/*For Live Views Page################################################################*/
+.LiveBothBlock {
+    display: -webkit-flex;
+    display: flex;
+
+}
+/*Main Block*/
+.LiveViewsBlock {
+    -webkit-flex: initial;
+    flex: initial;
+    width: 512px;
+    margin-top: 20px;
+
+    height: 350px;
+    border: solid 2px green;
+}
+
+/*Main Block*/
+.LiveViewsBlock2 {
+    -webkit-flex: none;
+    flex: none;
+    width: 512px;
+    margin-top: 20px;
+
+    height: 350px;
+    border: solid 2px green;
+}
+
+/*實況嵌入*/
+#LiveViewframe {
+    width: 512px;
+    height: 350px;
+
+    /*(IE6)若大於550px就調整*/
+    width:expression(document.body.clientWidth&gt;420?"420px""auto");
+    overflow:hidden;/*超過不顯示*/
+}
+
+/*底層區塊*/
+.LiveViewsBlockFooter {
+    -webkit-flex: none;
+    flex: none;
+    width: 512px;
+    height: 350px;
+    border:solid 2px #5151A2;
+    margin-top: 20px;
+    /*預留footer block的空間*/
+    margin-bottom: 70px;
+}
