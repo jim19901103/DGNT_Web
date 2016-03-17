@@ -28,7 +28,7 @@
 
 	<footer class="row">
 		<?php
-			//require_once("/../includes/footer.php");
+			require_once("/../includes/footer.php");
 		?>
 		<div class="print_var">
 		<?php

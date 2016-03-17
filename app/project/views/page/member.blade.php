@@ -1,5 +1,8 @@
 <!--預留區塊-->
 <div class="MiddleTopBlock">
+	<div></div>
+	<div></div>
+	<div></div>
 </div>
 <div id="MiddleCenterBlock">
 </div>
