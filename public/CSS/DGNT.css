@@ -503,8 +503,8 @@ div {
 }
 /*Main Block*/
 .LiveViewsBlock {
-    -webkit-flex: initial;
-    flex: initial;
+    -webkit-flex: none;
+    flex: none;
     width: 512px;
     margin-top: 20px;
 
@@ -527,7 +527,7 @@ div {
 #LiveViewframe {
     width: 512px;
     height: 350px;
-
+    
     /*(IE6)若大於550px就調整*/
     width:expression(document.body.clientWidth&gt;420?"420px""auto");
     overflow:hidden;/*超過不顯示*/
