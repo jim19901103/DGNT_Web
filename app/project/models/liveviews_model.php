@@ -1,16 +1,16 @@
 <?php
 // echo "models\other_model.php<br>";
 
-class Other_model extends Model
+class LiveViews_model extends Model
 {
 	function __construct()
 	{
 		//parent::__construct('localhost', 'web', 'root', '');
 	}
 
-	function getOtherCont()
+	function getLiveViewsCont()
 	{
-		$body1 = 'other\'s contents';
+		$body1 = 'Liveviews\'s contents';
 		return $body1;
 	}
 }

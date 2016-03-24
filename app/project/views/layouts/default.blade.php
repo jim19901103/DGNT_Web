@@ -22,8 +22,8 @@
 				case 'member':
 					require_once("/../page/member.blade.php");
 					break;
-				case 'other':
-					require_once("/../page/other.blade.php");
+				case 'liveviews':
+					require_once("/../page/liveviews.blade.php");
 					break;
 				default:
 					//
