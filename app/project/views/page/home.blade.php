@@ -46,19 +46,19 @@
  	</div>
  	<div id="RelatedInformationBlock3">
 		<div id="ContactUs">
-			<p><?=$data['ContactUsTitle'];?></p>
+			<p><?=$data['ContactUsTitle'];?><span id="C1">>><span></p>
 		</div>
 
 		<div class="ContactUsLinkBlock">
-			<h4 style="color:white;">放圖片連結</h4>
-		</div>
-
-		<div id="DouNatUs">
-			<p><?=$data['ContactUsTitle'];?></p>
-		</div>
-
-		<div class="DouNatUsLinkBlock">
-			<h4 style="color:white;">放圖片連結</h4>
+			<ul class="SocialList">
+		        <li><a id="FacebookLink" href=<?=$data['SocialLinkFB'];?> target="_blank"></a></li>
+		    </ul>
+		    <ul class="SocialList">
+				<li><a id="TwitterLink" href=<?=$data['SocialLinkTr'];?> target="_blank"></a></li>
+			</ul>
+			<ul class="SocialList">
+				<li><a id="InstagramLink" href=<?=$data['SocialLinkIg'];?> target="_blank"></a></li>
+			</ul>
 		</div>
  	</div>
  </div>

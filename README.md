@@ -1,42 +1,38 @@
-DGNT Web Design.
+Basic MVC
 =========
 
+Learn the basic principles of the Model-View-Controller (MVC) pattern.
+MVC is a software design pattern for developing web applications. 
+This project provides a sample MVC architecture to PHP beginner.
+It is currently in beta stage.
 
-## Recent Update ##
+## Features ##
+- Only basic Model-View-Contorller
+- No route, autoloader, namespace, ...
 
-- 20160317  
-  Increase the "Live Views" page content temporarily.  
+## Requirements ##
+- Web Server
+- MySQL
+- PHP 5.3.3+
 
-- 20160313  
-  Modify the Marquee design.  
+## Installation ##
+- Make sure the web server has MySQL and PHP(5.3.3+) support.
+- Download or clone this project, extract it into your webroot.
+- Enable rewrite mod for your web server and change the documnetroot to /public/ folder in web server config.
+- Visit your domain.
 
-- 20160309  
-  Modify the homepage layout and code optimization.  
+## Change log ##
+### 0.4.013116 ###
+- disable echo log
+- tag: beta 1.0
 
-- 20160303  
-  Add the FB Plugin.  
+### 0.3.013116 ###
+- Created sample project for developing
 
-- 20160302  
-  Code optimization and add a default layout.  
+### 0.2.013116 ###
+- Created core for MVC
+- Updated README.md
 
-- 20160228  
-  Modify the website architecture.  
-
-- 20160221  
-  Modify the method that link to blog page, but has a bug. Add Marquee Block.  
-
-- 20160130  
-  Blog page link is working.  
-
-- 20160124  
-  The website architecture changed to similar MVC model.  
-
-- 20160111  
-  A simple website architecture. Only homepage can work.  
-
-
-
-
-
-
-
+### 0.1.013016 ###
+- Initial project
+- Added README.md
