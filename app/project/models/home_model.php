@@ -23,16 +23,16 @@ class Home_model extends Model
 	function getMarqueeLink()
 	{
 		$MarqueeLinkArray = array(
-			"../../public/Images/left.png",
-			"../../public/Images/right.png",
+			"../../public/Images/HomePage/left.png",
+			"../../public/Images/HomePage/right.png",
 			"https://livehouse.in/embed/channel/388060/video",
 			"http://www.facebook.com/",
 			"https://twitter.com/",
 			"http://instagram.com/",
-			"../../public/Images/1.png",
-			"../../public/Images/2.png",
-			"../../public/Images/3.png",
-			"../../public/Images/4.png");
+			"../../public/Images/HomePage/1.png",
+			"../../public/Images/HomePage/2.png",
+			"../../public/Images/HomePage/3.png",
+			"../../public/Images/HomePage/4.png");
 		return $MarqueeLinkArray;
 	}
 

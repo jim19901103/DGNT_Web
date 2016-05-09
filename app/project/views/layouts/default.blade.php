@@ -12,23 +12,23 @@
 
 	<div id="main" class="row">
 		<?php
-			switch ($data['page']) {
-				case 'home':
-					require_once("/../page/home.blade.php");
-					break;
-				case 'blog':
-					require_once("/../page/blog.blade.php");
-					break;
-				case 'member':
-					require_once("/../page/member.blade.php");
-					break;
-				case 'liveviews':
-					require_once("/../page/liveviews.blade.php");
-					break;
-				default:
-					//
-					break;
-			}?>
+		switch ($data['page']) {
+			case 'home':
+				require_once("/../page/home.blade.php");
+				break;
+			case 'blog':
+				require_once("/../page/blog.blade.php");
+				break;
+			case 'member':
+				require_once("/../page/member.blade.php");
+				break;
+			case 'liveviews':
+				require_once("/../page/liveviews.blade.php");
+				break;
+			default:
+				require_once("/../page/home.blade.php");
+				break;}
+		?>
 	</div>
 
 	<!-- FB Link To Web's Right -->

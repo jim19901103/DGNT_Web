@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="PageWapper">
 <head>
 <?php require_once("/../includes/head.php");?>
 </head>
-<body>
+<body class="PageWapper">
 <div class="container">
 
 	<header class="row">
@@ -11,31 +11,8 @@
 	</header>
 
 	<div id="main" class="row">
-
-		<?php
-			require_once("/../page/member.blade.php");
-		?>
-
+		<?php require_once("/../page/member.blade.php");?>
 	</div>
-
-	<!-- FB Link To Web's Right -->
-	<div class="FbBox">
-	<div>
-		<div id="fb-root"></div>
-		<div class="fb-page" data-href="https://www.facebook.com/Dragnorth-Workshop-1024409334293029/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-	</div>
-	</div>
-
-	<footer class="row">
-		<?php
-			require_once("/../includes/footer.php");
-		?>
-		<div class="print_var">
-		<?php
-			//echo "<pre>",print_r(get_defined_vars()),"</pre>";
-		?>
-		</div>
-	</footer>
 
 </div>
 </body>

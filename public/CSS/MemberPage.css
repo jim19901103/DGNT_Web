@@ -1,0 +1,209 @@
+.PageWapper {
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+.MemberBlock {
+    position: relative;
+    width: 1190px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.PeopleImageDisplayBlock {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    top: 90px;
+    overflow:hidden;
+}
+
+.ImageSize {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    right: 0;
+}
+
+.PeopleImageDisplayBlock div {
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+}
+
+#ImageOne {
+    right: 0;
+}
+
+.MemberTitleBlock {
+    width: 1024px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0;
+    margin-left: 80px;
+}
+
+.FormChoiceBlock {
+    position: absolute;
+}
+
+.FormChoiceBlock div {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 2;
+    left: 90px;
+
+    /*平行四邊*/
+    width: 40px;
+    height: 150px;
+/*     -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+    -o-transform: skew(20deg); */
+
+    border: solid 2px gray;
+}
+
+.FormChoiceBlock img {
+    max-width: 100%;
+    height: 100%;
+    /*transform: rotate(-45deg) scale(1.42);*/
+    opacity: 1;
+}
+
+.FormChoiceChildrenBlock img {
+    max-width: 100%;
+    height: 100%;
+    /*transform: rotate(-45deg) scale(1.42);*/
+    opacity: 1;
+}
+
+.FormChoiceChildrenBlock {
+    position: relative;
+}
+
+.FormChoiceChildrenBlock div {
+    position: absolute;
+    overflow: hidden;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+    left: 90px;
+
+    /*平行四邊*/
+    border: solid 2px red;
+    width: 40px;
+    height: 120px;
+    /* -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+        -o-transform: skew(20deg); */
+}
+
+.FormChoiceChildrenBlock div {
+    border: solid 2px white;
+}
+
+.FormChoiceChildrenBlock .ChildrenBlockTwo {
+    margin-left: 44px;
+}
+
+.FormChoiceChildrenBlock .ChildrenBlockThree {
+    margin-left: 88px;
+}
+
+#FlagMotion div:hover {
+    cursor: pointer;
+}
+
+.ContentDisplayBlock {
+    position: absolute;
+    z-index: 10;
+    width: 680px;
+    height: 320px;
+    left: 120px;
+    top: 190px;
+
+    /*border: solid 2px green;*/
+}
+
+.ContentDisplayBlock div {
+    width: 680px;
+    height: 320px;
+    z-index: 100;
+    display: none;
+    position: absolute;
+}
+
+.ContentDisplayBlock #first {
+    display: block;
+    left: 0;
+}
+
+.ContentDisplayBlock .ContentFlag {
+    margin: 0 auto;
+    color: #1C1C1C;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: normal;
+    outline: 0;
+    line-height: 1;
+}
+
+.content ul {
+    margin-left: -10px;
+    margin-bottom: 40px;
+    list-style-type: none;
+}
+
+.HorizontalFlag li {
+    float: left;
+    padding-left: 28px;
+}
+
+.content li {
+    background-image: url("../Images/MemberPage/BulletsStar.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    color: #E16B8C;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    outline: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.LiTwo {
+    margin-left: 40px;
+}
+
+.ProfileContent {
+    float: left;
+    color: #6E552F;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    outline: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-indent: 2em;
+}
+

@@ -1,6 +1,6 @@
 <div class="FooterBlock">
 <div id="FooterInner">
-	<img src="../../public/Images/78.png" alt="78Logo">
+	<img src="../../public/Images/Common/78.png" alt="78Logo">
 </div>
 
 <div id="FooterInformation">

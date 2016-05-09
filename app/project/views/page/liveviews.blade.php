@@ -29,7 +29,7 @@
 <div class="LiveViewsBlock2">
 	<!--src後面+video:只嵌入影片；src後面+chatroom:只嵌入聊天頻道-->
 	<div class="Right_ProfileBlock">
-		<div><iframe id="LiveViewframe" src="https://livehouse.in/embed/channel/324154/video/video" autoplay="0" frameborder="0" allowfullscreen></iframe></div>
+		<div><iframe id="LiveViewframe" src="https://livehouse.in/embed/channel/324154/video" autoplay="0" frameborder="0" allowfullscreen></iframe></div>
 	</div>
 </div>
 </div>
@@ -53,7 +53,7 @@
 	<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
     <!-- call youtube iFrame API scripts -->
-    <script src="/../../../../public/JavaScript/youtubeiFrame API.js"></script>
+    <script src="/../../../../public/JavaScript/youtubeiFrame_API.js"></script>
 	</div>
 </div>
 </div>

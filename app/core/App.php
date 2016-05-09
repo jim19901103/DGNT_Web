@@ -48,7 +48,6 @@ class App
 	{
 
 		self::parseUrl();
-
 		// controller
 		if( file_exists(dirname(__FILE__).'/../project/controllers/' . self::$_url[1] . '.php') ) {
 			self::$_controller = self::$_url[1];

@@ -2,15 +2,26 @@ html, body {
     height: 100%;
     width: 1024px;
     max-width: 1024px;
-
     margin: 0px auto;
     padding: 0;
 
-    background: black;
+    /*background: black;*/
+    background-image: url(../Images/Common/BG.png);
+    /*background:url(bg_flower.gif);*/
+    -moz-background-size:100% 100%; /* 老版本的 Firefox */
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
 }
 
 div {
     display: block;
+}
+
+.TitleBlock {
+    width: 1024px;
+    margin: 0px auto;
+    padding: 0;
 }
 
 /*選取文字時的顏色*/
@@ -29,7 +40,7 @@ div {
 /*背景看板或大標*/
 .BackgroundBillboards {
     width:auto;
-    max-width:100%;
+    max-width:45%;
     height: 60px;
     margin: 0 auto;
 
@@ -44,11 +55,15 @@ div {
     overflow:hidden;
 
     border: solid 0px green;
+    float: left;
+    position: relative;
 }
-.BackgroundBillboards a{
+
+.BackgroundBillboards a {
     text-decoration: none;
 }
-#BillboardsText{
+
+#BillboardsText {
     display: block;
     color: #6A4C9C;
     font-size: 30px;
@@ -56,7 +71,6 @@ div {
     font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
     font-weight: bold;
     padding: 0px 38px 21px 0px;
-    border: 0;
     outline: 0;
     line-height: 1;
     list-style-type: none;
@@ -64,17 +78,15 @@ div {
 }
 
 /*頁首開始*/
-.HeaderBlock{
+.HeaderBlock {
+    position: relative;
     display: -webkit-flex;
     display: flex;
 
-    width: 1024px;
-    max-width: 1024px;
+    width: 600px;
+    max-width: 590px;
     height: 40px;
-    margin: 0 auto;
-
-    box-sizing: border-box;
-    float:top;
+    margin-bottom: 30px;
 }
 
 /*選單列*/
@@ -82,11 +94,11 @@ div {
     -webkit-flex: 1;
     flex: 1;
 
-    width: 200px;
+    width: 100px;
     height: 20px;
 
-    clear: both;
-    margin: 0;
+    right: 0;
+    margin: 30px 25px 0px 0px;
     padding-top: 5px;
 }
 
@@ -117,11 +129,11 @@ div {
     float: left;
     display: block;
     color: #EEA9A9;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
     font-weight: bold;
-    padding: 5px 38px 21px;
+    padding: 5px 20px 21px 0px;
     border: 0;
     outline: 0;
     line-height: 1;
@@ -250,11 +262,6 @@ div {
 
 .MiddleCenterBlock .first {
     left: 0;
-}
-
-.MiddleCenterBlock a img {
-    /*width:100%;
-    height: 100%;*/
 }
 
 /*前一頁/下一頁設定*/
@@ -459,7 +466,7 @@ div {
 
 /*FB外接連結*/
 .FbBox{
-    background: url("../../public/Images/FB_right.png") no-repeat scroll left center transparent !important;
+    background: url("../../public/Images/Common/FB_right.png") no-repeat scroll left center transparent !important;
 
     width: 320px;
     height: 270px;
@@ -495,52 +502,4 @@ div {
     text-decoration:underline;
 }
 
-/*For Live Views Page################################################################*/
-.LiveBothBlock {
-    display: -webkit-flex;
-    display: flex;
 
-}
-/*Main Block*/
-.LiveViewsBlock {
-    -webkit-flex: none;
-    flex: none;
-    width: 512px;
-    margin-top: 20px;
-
-    height: 350px;
-    border: solid 2px green;
-}
-
-/*Main Block*/
-.LiveViewsBlock2 {
-    -webkit-flex: none;
-    flex: none;
-    width: 512px;
-    margin-top: 20px;
-
-    height: 350px;
-    border: solid 2px green;
-}
-
-/*實況嵌入*/
-#LiveViewframe {
-    width: 512px;
-    height: 350px;
-    
-    /*(IE6)若大於550px就調整*/
-    width:expression(document.body.clientWidth&gt;420?"420px""auto");
-    overflow:hidden;/*超過不顯示*/
-}
-
-/*底層區塊*/
-.LiveViewsBlockFooter {
-    -webkit-flex: none;
-    flex: none;
-    width: 512px;
-    height: 350px;
-    border:solid 2px #5151A2;
-    margin-top: 20px;
-    /*預留footer block的空間*/
-    margin-bottom: 70px;
-}
