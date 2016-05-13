@@ -226,22 +226,12 @@ div {
     overflow:hidden;/*超過不顯示*/
 }
 
-#BlogUlUse {
-    color: #ffffff;
-    font-size: 3;
-    text-decoration: none;
-    text-align:left;
-    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 23px 38px 21px;
-}
-
 /*跑馬燈區塊*/
 .MiddleCenterBlock {
     width: 1024px;
     max-width: 1024px;
     margin-top: 50px;
-    height: 550px;
+    height: 400px;
     max-height: 550px;
 
     margin-top:50px;
@@ -270,7 +260,7 @@ div {
     height: 40px;
     display: block;
     position: absolute;
-    top: 220px;
+    top: 180px;
     z-index: 200;
     cursor: pointer;
 }
@@ -307,7 +297,7 @@ div {
     width: 120px;
     height: 10px;
     left: 450px;
-    top: 530px;
+    top: 380px;
     z-index: 1000;
     position: absolute;
 }

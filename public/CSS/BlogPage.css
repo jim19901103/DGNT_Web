@@ -1,0 +1,89 @@
+.BlogMainBlock {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 20px;
+
+    height: 100%;
+    border: solid 2px blue;
+    /*預留footer block的空間*/
+    margin-bottom: 70px;
+}
+
+.MenuBlock {
+	width: 400px;
+    float: left;
+
+    height: 570px;
+    border: solid 2px green;
+}
+
+.SearchBlock {
+    width: 240px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: solid 2px blue;
+
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    outline: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.RecentPosts {
+    width: 240px;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: solid 2px green;
+}
+
+#RecentPostsTitle {
+    margin: auto 0;
+    margin-top: 10px;
+    color: #227D51;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    outline: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.PostsCategories {
+    width: 240px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: solid 2px purple;
+}
+
+#PostsCategoriesTitle {
+    margin: auto 0;
+    margin-top: 10px;
+    color: #227D51;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    outline: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.ArticleBlock {
+	width: 100%;
+
+    height: 570px;
+    border: solid 2px red;
+}
+
+

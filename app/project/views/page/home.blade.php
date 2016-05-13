@@ -50,7 +50,7 @@
 		</div>
 
 		<div class="ContactUsLinkBlock">
-			<h4 style="color:white;">放圖片連結</h4>
+			<h4 style="color:black;">放圖片連結</h4>
 		</div>
 
 		<div id="DouNatUs">
@@ -58,7 +58,7 @@
 		</div>
 
 		<div class="DouNatUsLinkBlock">
-			<h4 style="color:white;">放圖片連結</h4>
+			<h4 style="color:black;">放圖片連結</h4>
 		</div>
  	</div>
  </div>
