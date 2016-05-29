@@ -4,6 +4,9 @@ DGNT Web Design.
 
 ## Recent Update ##
 
+- 20160529  
+  Update the LiveViews Page and Renamed to Lives.  
+
 - 20160509  
   Update the Member Page and change background style.  
 

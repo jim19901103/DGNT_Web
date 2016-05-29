@@ -1,54 +1,227 @@
-/*For Live Views Page################################################################*/
-.LiveBothBlock {
-    display: -webkit-flex;
-    display: flex;
+.PageWapper {
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0;
 
-}
-/*Main Block*/
-.LiveViewsBlock {
-    -webkit-flex: none;
-    flex: none;
-    width: 512px;
-    margin-top: 20px;
-
-    height: 350px;
-    border: solid 2px green;
+    overflow-x: hidden;
 }
 
-/*Main Block*/
-.LiveViewsBlock2 {
-    -webkit-flex: none;
-    flex: none;
-    width: 512px;
-    margin-top: 20px;
-
+.VideoDisplayBlock {
+    position: absolute;
+    width: 100%;
     height: 350px;
-    border: solid 2px green;
+    margin: 0 auto;
+
+    border: solid 2px blue;
+}
+
+.uk-slider-container {
+  overflow: hidden;
+}
+
+.uk-slider {
+  /* 1 */
+  position: relative;
+  /* 2 */
+  z-index: 0;
+  /* 3 */
+  touch-action: pan-y;
+}
+/*
+ * 1. Reset list style without interfering with grid
+ */
+.uk-slider:not(.uk-grid) {
+  /* 1 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Sub-object item
+ * 1. Position items above each other
+ */
+.uk-slider > * {
+  /* 1 */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*
+ * Clip child elements
+ */
+.uk-slider-container {
+  overflow: hidden;
+}
+/*
+ * Dragged
+ */
+.uk-slider:not(.uk-drag) {
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+}
+/*
+ * 1. Makes text unselectable
+ */
+.uk-slider.uk-drag {
+  cursor: col-resize;
+  /* 1 */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*
+ * 1. Prevents images and links from being dragged (default browser behavior)
+ * 2. Disables the default callout shown when you touch and hold a touch target
+ * Currently only works in Webkit
+ */
+.uk-slider a,
+.uk-slider img {
+  /* 1 */
+  -webkit-user-drag: none;
+  user-drag: none;
+  /* 2 */
+  -webkit-touch-callout: none;
+}
+/*
+ * 1. Prevents images and links from being dragged in Firefox
+ */
+.uk-slider img {
+  pointer-events: none;
+}
+/* Modifier: `uk-slider-fullscreen`
+ ========================================================================== */
+.uk-slider-fullscreen,
+.uk-slider-fullscreen > li {
+  height: 100vh;
+}
+
+.uk-slider .uk-grid-width-medium-1-3 {
+  min-width: 4095px;
+  min-height: 303px;
+  transform: translateX(-1365px);
+}
+
+.uk-slide-before .uk-slide-after {
+  width: 455px;
+  max-width: 455px;
+
+  overflow: hidden;
+}
+
+.displaysize{
+  width: 455px;
+  height: 350px;
+  max-width: 455px;
+
+  overflow: hidden;
 }
 
 /*實況嵌入*/
 #LiveViewframe {
-    width: 512px;
-    height: 350px;
+  width: 455px;
+  height: 350px;
+  max-width: 455px;
 
-    /*(IE6)若大於550px就調整*/
-    width:expression(document.body.clientWidth&gt;420?"420px""auto");
-    overflow:hidden;/*超過不顯示*/
+  /*(IE6)若大於550px就調整*/
+  width:expression(document.body.clientWidth&gt;420?"420px""auto");
+  overflow:hidden;/*超過不顯示*/
 }
 
-/*底層區塊*/
-.LiveViewsBlockFooter {
-    -webkit-flex: none;
-    flex: none;
-    width: 512px;
-    height: 350px;
-    border:solid 2px #5151A2;
-    margin-top: 20px;
-    /*預留footer block的空間*/
-    margin-bottom: 70px;
+/*=======================整個左右標籤的設定及控制=======================*/
+.uk-slidenav {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  /* 3 */
+  line-height: 60px;
+  color: rgba(50, 50, 50, 0.4);
+  font-size: 60px;
+  text-align: center;
 }
 
-#player {
-    max-width: 100%;
-    max-height: 100%;
+.uk-slidenav-position .uk-slidenav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  margin-top: -30px;
+}
+
+.uk-slidenav-previous:before {
+  content: "\f104";
+  font-family: FontAwesome;
+}
+.uk-slidenav-next:before {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+
+.uk-slidenav-position:hover .uk-slidenav {
+  display: block;
+}
+
+.uk-slidenav-position .uk-slidenav-previous {
+  left: 20px;
+}
+.uk-slidenav-position .uk-slidenav-next {
+  right: 20px;
+}
+
+/* Modifier: `uk-slidenav-contrast`
+ ========================================================================== */
+.uk-slidenav-contrast {
+  color: rgba(255, 255, 255, 0.5);
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ */
+.uk-slidenav-contrast:hover,
+.uk-slidenav-contrast:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* Active */
+.uk-slidenav-contrast:active {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ChoiceVideoPicUL {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 50px;
+  left: 50px;
+
+  width: 90%;
+  height: 120px;
+
+  border: solid 2px black;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.ChoiceVideoPicUL li{
+  display: inline;
+  float:left;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.ChoiceVideoPicUL li a{
+  width: 100px;
+  height: 70px;
+  display: inline-block;  /* 水平內顯示為區塊 */
+  border: 2px solid green;
+
+  color:#0033FF;
+  text-decoration:none;
+  font-size:12px;
+  line-height:21px;
+
+  margin-top: 10px;
 }

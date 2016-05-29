@@ -14,7 +14,7 @@ class Controller
 	protected function model($model)
 	{
 		if ( file_exists(dirname(__FILE__).'/../project/models/' . $model . '.php') )	{
-			require_once '/../project/models/' . $model . '.php';
+			require_once dirname(__FILE__).'/../project/models/' . $model . '.php';
 			return new $model();
 		} else {
 			return False;
