@@ -1,5 +1,4 @@
-<!-- 跑馬燈效果 -->
-<script type="text/javascript">
+//=======跑馬燈效果======
 jQuery(document).ready(function() {
   /*定義兩個變量，保存當前頁碼和上一頁頁碼*/
   var $index=0;
@@ -62,23 +61,4 @@ jQuery(document).ready(function() {
      $(".MiddleCenterBlock a").eq($exdex).stop(true,true).
          css("left","0").animate({"left":"100%"});
   }
-});</script>
-<!-- 跑馬燈效果結束 -->
-
-<!-- FB物件右邊滑動 -->
-<script type="text/javascript">
-  jQuery(document).ready(function() {
-  jQuery(".FbBox").hover(function() {
-  jQuery(this).stop().animate({right: "0"}, "medium");}, function() {
-  jQuery(this).stop().animate({right: "-333"}, "medium");}, 500);});
-</script>
-
-<!-- FB的外掛連結-->
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+});

@@ -1,20 +1,16 @@
-.PageWapper {
-    max-width: 100%;
-    width: auto;
-    height: 100%;
-    margin: 0px auto;
-    padding: 0;
-
-    overflow-x: hidden;
+.LivesVideoBlock {
+  height: 350px;
+  border: solid 2px black;
 }
 
-.VideoDisplayBlock {
-    position: absolute;
-    width: 100%;
-    height: 350px;
-    margin: 0 auto;
+.VideoSizeBlock {
+  width: 100%;
+  height: 350px;
+}
 
-    border: solid 2px blue;
+.VideoChoiceBlock {
+  height: 120px;
+  margin-top: 10px;
 }
 
 .uk-slider-container {
@@ -99,35 +95,24 @@
 }
 
 .uk-slider .uk-grid-width-medium-1-3 {
-  min-width: 4095px;
+  /*min-width: 4095px;*/
   min-height: 303px;
   transform: translateX(-1365px);
 }
 
 .uk-slide-before .uk-slide-after {
-  width: 455px;
-  max-width: 455px;
+  /*width: 455px;*/
+  /*max-width: 455px;*/
 
   overflow: hidden;
 }
 
 .displaysize{
-  width: 455px;
+  /*width: 455px;*/
   height: 350px;
-  max-width: 455px;
+  /*max-width: 455px;*/
 
   overflow: hidden;
-}
-
-/*實況嵌入*/
-#LiveViewframe {
-  width: 455px;
-  height: 350px;
-  max-width: 455px;
-
-  /*(IE6)若大於550px就調整*/
-  width:expression(document.body.clientWidth&gt;420?"420px""auto");
-  overflow:hidden;/*超過不顯示*/
 }
 
 /*=======================整個左右標籤的設定及控制=======================*/
@@ -192,17 +177,7 @@
 }
 
 .ChoiceVideoPicUL {
-  position: absolute;
-  margin: 0 auto;
-  margin-top: 50px;
-  left: 50px;
-
-  width: 90%;
   height: 120px;
-
-  border: solid 2px black;
-  overflow-y: hidden;
-  overflow-x: scroll;
 }
 
 .ChoiceVideoPicUL li{
@@ -222,6 +197,5 @@
   text-decoration:none;
   font-size:12px;
   line-height:21px;
-
   margin-top: 10px;
 }

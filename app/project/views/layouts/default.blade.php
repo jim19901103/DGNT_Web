@@ -5,7 +5,6 @@
 </head>
 <body>
 <div class="container">
-
 	<header class="row">
 		<?php require_once("/../includes/header.php");?>
 	</header>
@@ -31,14 +30,6 @@
 		?>
 	</div>
 
-	<!-- FB Link To Web's Right -->
-	<div class="FbBox">
-	<div>
-		<div id="fb-root"></div>
-		<div class="fb-page" data-href="https://www.facebook.com/Dragnorth-Workshop-1024409334293029/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-	</div>
-	</div>
-
 	<footer class="row">
 		<?php
 			require_once("/../includes/footer.php");
@@ -49,7 +40,13 @@
 		?>
 		</div>
 	</footer>
-
 </div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+<script src="/../../../../public/JavaScript/bootstrap.min.js"></script>
 </body>
 </html>

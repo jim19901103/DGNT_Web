@@ -1,0 +1,102 @@
+html, body {
+    background-image: url(../Images/Common/BG.png);
+    -moz-background-size:100% 100%; /* 老版本的 Firefox */
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+@font-face
+{
+    font-family: "Comic Sans MS", "Monotype Corsiva";
+    src: url('/../Fonts/comic.ttf'), url('/../Fonts/comicbd.ttf'), url('/../Fonts/mtcorsva.ttf');
+}
+
+@media all and (max-width: 720px){
+    body{font-size: 1.5vmax;}
+}
+
+/*選取文字時的顏色*/
+::selection {
+    color: red;
+    background: yellow;
+}
+
+/*頁首開始*/
+/*背景看板或大標*/
+.BackgroundBillboards {
+    height: 40px;
+    border: solid 2px green;
+}
+
+.BackgroundBillboards a {
+    text-decoration: none;
+}
+
+/*清除navbar的顏色*/
+.navbar{
+    background: none !important;
+    border-color: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+#BillboardsText {
+    /*display: block;*/
+    color: #6A4C9C;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    /*padding: 0px 38px 21px 0px;*/
+    outline: 0;
+    line-height: 1;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+/*選單列*/
+.NavBlock {
+    height: 20px;
+}
+
+#bs-example-navbar-collapse-1 li a {
+    float: left;
+    /*display: block;*/
+    color: #EEA9A9;
+    font-size: 22px;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/*移動至連結時顏色變化*/
+#bs-example-navbar-collapse-1 a:hover{
+    color:#5AA0E6;
+    transition:  color .20s linear;
+    -o-transition: color .20s linear;
+    -webkit-transition: color .20s linear;
+    -moz-transition: color .20s linear;
+}
+/*頁首結束*/
+
+/*頁尾*/
+.FooterInner {
+    width: 60px;
+    height: 60px;
+}
+
+.FooterInformation {
+    margin-left: -9%;
+}
+
+#FooterInformationContent{
+    color: #4876FF;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    text-align: left;
+    margin: 10px 0px 0px 0px;
+}

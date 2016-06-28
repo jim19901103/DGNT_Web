@@ -1,70 +1,12 @@
-.PageWapper {
-    max-width: 100%;
-    width: auto;
-    height: 100%;
-    margin: 0px auto;
-    padding: 0;
-
-    overflow-x: hidden;
-}
-
-.MemberBlock {
-    position: relative;
-    width: 1190px;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.PeopleImageDisplayBlock {
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-    height: 500px;
-    top: 90px;
-    overflow:hidden;
-}
-
-.ImageSize {
-    position: absolute;
-    width: 300px;
-    height: 500px;
-    right: 0;
-}
-
-.PeopleImageDisplayBlock div {
-    z-index: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 100%;
-}
-
-#ImageOne {
-    right: 0;
-}
-
-.MemberTitleBlock {
-    width: 1024px;
-    height: 100%;
-    margin: 0px auto;
-    padding: 0;
-    margin-left: 80px;
-}
-
-.FormChoiceBlock {
-    position: absolute;
+.LBlock {
+    height:500px;
 }
 
 .FormChoiceBlock div {
     position: relative;
     overflow: hidden;
     float: left;
-    margin: 0 auto;
-    padding: 0;
     z-index: 2;
-    left: 90px;
 
     /*平行四邊*/
     width: 40px;
@@ -98,10 +40,7 @@
     position: absolute;
     overflow: hidden;
     float: left;
-    margin: 0 auto;
-    padding: 0;
     z-index: 1;
-    left: 90px;
 
     /*平行四邊*/
     border: solid 2px red;
@@ -117,42 +56,42 @@
 }
 
 .FormChoiceChildrenBlock .ChildrenBlockTwo {
-    margin-left: 44px;
+    margin-left: 40px;
 }
 
 .FormChoiceChildrenBlock .ChildrenBlockThree {
-    margin-left: 88px;
+    margin-left: 80px;
 }
 
 #FlagMotion div:hover {
     cursor: pointer;
 }
 
-.ContentDisplayBlock {
-    position: absolute;
-    z-index: 10;
-    width: 680px;
-    height: 320px;
-    left: 120px;
-    top: 190px;
-
-    /*border: solid 2px green;*/
+.PBlock {
+    margin-top: 20px;
 }
 
-.ContentDisplayBlock div {
-    width: 680px;
+/*成員介紹區塊*/
+.ContentDisplayBlock {
+    position: relative;
+    z-index: 10;
+    height: 320px;
+    top: 20px;
+}
+
+.contentmove {
     height: 320px;
     z-index: 100;
     display: none;
     position: absolute;
 }
 
-.ContentDisplayBlock #first {
+#first {
     display: block;
     left: 0;
 }
 
-.ContentDisplayBlock .ContentFlag {
+.ContentFlag {
     margin: 0 auto;
     color: #1C1C1C;
     font-size: 30px;
@@ -163,7 +102,8 @@
     line-height: 1;
 }
 
-.content ul {
+.HorizontalFlag {
+    margin-top: 20px;
     margin-left: -10px;
     margin-bottom: 40px;
     list-style-type: none;
@@ -174,7 +114,7 @@
     padding-left: 28px;
 }
 
-.content li {
+.HorizontalFlag li {
     background-image: url("../Images/MemberPage/BulletsStar.png");
     background-repeat: no-repeat;
     background-position: center left;
@@ -194,6 +134,10 @@
 }
 
 .ProfileContent {
+    margin-top: 20px;
+}
+
+.ProfileContent p {
     float: left;
     color: #6E552F;
     font-size: 18px;
@@ -207,3 +151,28 @@
     text-indent: 2em;
 }
 
+/*人設圖區塊*/
+.PeopleImageDisplayBlock {
+    height: 500px;
+    overflow:hidden;
+}
+
+.PeopleImageDisplayBlock div {
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+}
+
+.ImageSize {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    right: 0;
+}
+
+#ImageOne {
+    right: 0;
+}

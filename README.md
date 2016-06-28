@@ -1,8 +1,12 @@
 DGNT Web Design.
 =========
+This is my first website, and for DGNT team.  
 
 
 ## Recent Update ##
+
+- 20160628  
+  Try using bootstrap to optimizing architecture, and update all pages.  
 
 - 20160529  
   Update the LiveViews Page and Renamed to Lives.  
@@ -22,7 +26,4 @@ DGNT Web Design.
 
 - 20160309  
   Modify the homepage layout and code optimization.  
-
-- 20160303  
-  Add the FB Plugin.  
 

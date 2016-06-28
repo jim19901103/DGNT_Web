@@ -11,6 +11,7 @@
 </div>
 
 <div class="ArticleBlock">
+	<h1 style="color:blue; font-size: 20px; text-align: center;">近期更新</h1>
 </div>
 
 
