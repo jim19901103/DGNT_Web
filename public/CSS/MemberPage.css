@@ -1,0 +1,178 @@
+.LBlock {
+    height:500px;
+}
+
+.FormChoiceBlock div {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    z-index: 2;
+
+    /*平行四邊*/
+    width: 40px;
+    height: 150px;
+/*     -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+    -o-transform: skew(20deg); */
+
+    border: solid 2px gray;
+}
+
+.FormChoiceBlock img {
+    max-width: 100%;
+    height: 100%;
+    /*transform: rotate(-45deg) scale(1.42);*/
+    opacity: 1;
+}
+
+.FormChoiceChildrenBlock img {
+    max-width: 100%;
+    height: 100%;
+    /*transform: rotate(-45deg) scale(1.42);*/
+    opacity: 1;
+}
+
+.FormChoiceChildrenBlock {
+    position: relative;
+}
+
+.FormChoiceChildrenBlock div {
+    position: absolute;
+    overflow: hidden;
+    float: left;
+    z-index: 1;
+
+    /*平行四邊*/
+    border: solid 2px red;
+    width: 40px;
+    height: 120px;
+    /* -webkit-transform: skew(20deg);
+      -moz-transform: skew(20deg);
+        -o-transform: skew(20deg); */
+}
+
+.FormChoiceChildrenBlock div {
+    border: solid 2px white;
+}
+
+.FormChoiceChildrenBlock .ChildrenBlockTwo {
+    margin-left: 40px;
+}
+
+.FormChoiceChildrenBlock .ChildrenBlockThree {
+    margin-left: 80px;
+}
+
+#FlagMotion div:hover {
+    cursor: pointer;
+}
+
+.PBlock {
+    margin-top: 20px;
+}
+
+/*成員介紹區塊*/
+.ContentDisplayBlock {
+    position: relative;
+    z-index: 10;
+    height: 320px;
+    top: 20px;
+}
+
+.contentmove {
+    height: 320px;
+    z-index: 100;
+    display: none;
+    position: absolute;
+}
+
+#first {
+    display: block;
+    left: 0;
+}
+
+.ContentFlag {
+    margin: 0 auto;
+    color: #1C1C1C;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: normal;
+    outline: 0;
+    line-height: 1;
+}
+
+.HorizontalFlag {
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+    list-style-type: none;
+}
+
+.HorizontalFlag li {
+    float: left;
+    padding-left: 28px;
+}
+
+.HorizontalFlag li {
+    background-image: url("../Images/MemberPage/BulletsStar.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    color: #E16B8C;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    outline: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.LiTwo {
+    margin-left: 40px;
+}
+
+.ProfileContent {
+    margin-top: 20px;
+}
+
+.ProfileContent p {
+    float: left;
+    color: #6E552F;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    outline: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/*人設圖區塊*/
+.PeopleImageDisplayBlock {
+    height: 500px;
+    overflow:hidden;
+}
+
+.PeopleImageDisplayBlock div {
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+}
+
+.ImageSize {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    right: 0;
+}
+
+#ImageOne {
+    right: 0;
+}

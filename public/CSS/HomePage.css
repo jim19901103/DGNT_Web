@@ -1,0 +1,179 @@
+#Wrapper {
+    /*height: auto !important;
+    height: 100%;
+    min-height:100%;
+    position: relative;*/
+}
+
+/*Main Block*/
+/*左邊區塊*/
+.Left_NavBlock {
+    border: solid 2px yellow;
+}
+
+/*簡介敘述*/
+.BriefIntroduction {
+    color: #4876FF;
+    font-size: 22px;
+    text-decoration: none;
+    text-align:left;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    list-style-type: none;
+    line-height: 1.5;
+
+    /*超出範圍時*/
+    overflow: hidden;
+}
+
+/*實況嵌入*/
+#Instructionframe {
+    width: 100%;
+    height: 350px;
+
+    /*(IE6)若大於550px就調整*/
+    width:expression(document.body.clientWidth&gt;550?"550px""auto");
+    overflow:hidden;/*超過不顯示*/
+}
+
+/*跑馬燈區塊*/
+.MiddleCenterBlock {
+    height: 400px;
+    margin-top:50px;
+    position: relative;
+    overflow:hidden;
+    border: solid 2px orange;
+    margin-bottom: 50px;
+}
+
+.MiddleCenterBlock a {
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.MiddleCenterBlock .first {
+    left: 0;
+}
+
+/*前一頁/下一頁設定*/
+.MiddleCenterBlock .pre, .next {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 180px;
+    z-index: 200;
+    cursor: pointer;
+}
+
+/*按鈕圖案設定*/
+.pre img {
+    width: 40px;
+    height: 40px;
+
+    background: #cccccc;
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+.next img {
+    width: 40px;
+    height: 40px;
+
+    background: #cccccc;
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+.MiddleCenterBlock .pre {
+    left: 0px
+}
+
+.MiddleCenterBlock .next {
+    right: 0px;
+}
+
+/*圓圈小標*/
+.choose {
+    width: 100%;
+    height: 10px;
+    z-index: 1000;
+    position: absolute;
+    bottom: 5px;
+}
+
+.choose span {
+    width:14px;
+    height: 14px;
+    margin-right: 20px;
+    float: left;
+
+    background: blue;
+    border-radius: 14px;
+}
+
+.choose span:hover {
+    background: red;
+}
+
+.choose .red {
+    background: red;
+}
+
+/*中間下層區塊*/
+.MiddleCenterBlock2 {
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.RelatedInformationBlock {
+    height: inherit;
+    border: solid 2px gray;
+}
+
+.RelatedInformationBlock p {
+    color: #B452CD;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.RelatedInformationBlockTitle {
+    height: 50px;
+}
+
+.RIBlock {
+    height: 300px;
+}
+
+#TeamRecruitingContent {
+    text-align: left;
+}
+
+.ContactAndDouNatUs {
+    height: 40px;
+    margin-left: 10px;
+}
+
+.ContactAndDouNatUs p {
+    color: red;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Monotype Corsiva", "Meiryo", Helvetica, sans-serif;
+    text-align: left;
+}
+
+.ContactAndDouNatUsLinkBlock {
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    border: solid 2px green;
+}
